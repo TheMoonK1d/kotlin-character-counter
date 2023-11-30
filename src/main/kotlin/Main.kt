@@ -1,4 +1,6 @@
 fun main() {
+
+    //Counter function
     fun count (s : String){
         val txt = s.toCharArray()
         var letter = 0
@@ -6,6 +8,10 @@ fun main() {
         var space = 0
         var other = 0
         for (inx in txt.withIndex()){
+            /*
+            * Must use value...index does not work
+            *
+            */
             if(Character.isLetter(inx.value)){
                 letter++
             }else if (Character.isDigit(inx.value)){
